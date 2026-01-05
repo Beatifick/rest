@@ -28,3 +28,11 @@ java {
         vendor = JvmVendorSpec.ADOPTIUM
     }
 }
+
+java.toolchain {
+    download {
+        repositories {
+            mavenCentral()
+        }
+    }
+}
