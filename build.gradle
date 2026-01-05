@@ -25,14 +25,5 @@ test {
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(11)
-        vendor = JvmVendorSpec.ADOPTIUM
-    }
-}
-
-java.toolchain {
-    download {
-        repositories {
-            mavenCentral()
-        }
     }
 }
