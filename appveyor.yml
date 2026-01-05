@@ -1,21 +1,16 @@
-image: Visual Studio 2022  # образ Windows с поддержкой JDK
+image: Visual Studio 2022
 
-stack: JDK 11  # версия JDK
+stack: JDK 11
 
 branches:
   only:
-    - master  # ветка git
+    - master
 
-build: off  # используем свой скрипт сборки
+build: off
 
 install:
-  # Запускаем SUT
-  # В Windows используем start /B для запуска процесса в фоне
-  - start /B java -jar .\artifacts\app-mbank.jar
-  # chmod не нужен в Windows
-  - .\gradlew.bat --version  # проверяем, что gradlew работает
+    - start /B java -jar .\artifacts\app-mbank.jar
+    - chmod +x gradlew
 
 build_script:
-  # Запуск автотестов
-  # Для Selenide добавляем headless режим через системное свойство
   - .\gradlew.bat test -Dselenide.headless=true --info
