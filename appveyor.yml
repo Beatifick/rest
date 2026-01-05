@@ -1,5 +1,5 @@
-image: Ubuntu2004
-stack: jdk 11
+image: Visual Studio 2022
+stack: JDK 11
 
 install:
   - java -jar ./artifacts/app-mbank.jar &
