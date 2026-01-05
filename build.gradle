@@ -25,13 +25,6 @@ test {
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(11)
-    }
-}
-
-toolchainManagement {
-    jvm {
-        javaRepositories {
-            repository('adoptium')
-        }
+        vendor = JvmVendorSpec.ADOPTIUM
     }
 }
