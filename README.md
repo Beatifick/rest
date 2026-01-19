@@ -1,1 +1,1 @@
-  [Build status](https://ci.appveyor.com/api/projects/status/1jd1aklum0dksax4?svg=true)](https://ci.appveyor.com/project/Beatifick/rest)
+[![Java CI with Gradle](https://github.com/Beatifick/rest/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/Beatifick/rest/actions/workflows/gradle-publish.yml)
