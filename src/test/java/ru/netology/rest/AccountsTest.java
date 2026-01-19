@@ -18,3 +18,4 @@ class AccountsTest {
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"));
     }
 }
+
